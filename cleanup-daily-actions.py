@@ -71,7 +71,7 @@ for complete in completed:
                 print(idVal)
                 archive = client.schedule.archiveActions(key, idVal)
                 print(archive)
-                archivedStr += idVal + "<br>"
+                archivedStr += str(idVal) + "<br>"
 
 # If completed actions were archived, send email
 if archivedStr != "":
